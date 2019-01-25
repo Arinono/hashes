@@ -1,0 +1,142 @@
+omg: 1
+lifecycle:
+  startup:
+    command: ["node", "app.js"]
+info:
+  version: 1.0.0
+  title: hashes
+  description: hash algorithms as a microservice
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Asyncy
+    url: https://asyncy.com
+    email: hello@asyncy.com
+actions:
+  md5:
+    help: Hashes the content using MD5
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /md5
+      contentType: application/json
+    output:
+      type: string
+  md4:
+    help: Hashes the content using MD4
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /md4
+      contentType: application/json
+    output:
+      type: string
+  sha512:
+    help: Hashes the content using SHA512
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /sha512
+      contentType: application/json
+    output:
+      type: string
+  sha384:
+    help: Hashes the content using SHA384
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /sha384
+      contentType: application/json
+    output:
+      type: string
+  sha256:
+    help: Hashes the content using SHA256
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /sha256
+      contentType: application/json
+    output:
+      type: string
+  sha224:
+    help: Hashes the content using SHA224
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /sha224
+      contentType: application/json
+    output:
+      type: string
+  sha1:
+    help: Hashes the content using SHA1
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /sha1
+      contentType: application/json
+    output:
+      type: string
+  mdc2:
+    help: Hashes the content using MDC2
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /mdc2
+      contentType: application/json
+    output:
+      type: string
+  ripemd160:
+    help: Hashes the content using RIPEMD160
+    arguments:
+      content:
+        type: string
+        in: requestBody
+        help: The content to hash
+    http:
+      port: 5000
+      method: post
+      path: /ripemd160
+      contentType: application/json
+    output:
+      type: string

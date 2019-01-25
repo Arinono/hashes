@@ -1,0 +1,10 @@
+{
+  "name": "hashes",
+  "version": "1.0.0",
+  "description": "An OMG service which provides various hashing capabilities",
+  "main": "app.js",
+  "repository": "https://github.com/microservice/hashes",
+  "author": "Aurelien ARINO",
+  "license": "MIT",
+  "private": false
+}

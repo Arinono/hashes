@@ -1,0 +1,8 @@
+node_modules/
+.idea/
+.gitignore
+README.md
+LICENSE.md
+microservice.yml
+yarn.lock
+package-lock.json
